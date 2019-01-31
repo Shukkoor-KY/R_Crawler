@@ -60,7 +60,7 @@ View(df)
 Rcrawler(Website = "https://www.cardekho.com/" , 
          no_cores = 4, 
          no_conn = 4,
-         MaxDepth = 4, 
+         MaxDepth = 1, 
          crawlUrlfilter = 'used-cars',
          ExtractCSSPat = c(".price", 
                            ".dotlist span~ span+ span", 
