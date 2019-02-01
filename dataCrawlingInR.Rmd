@@ -16,18 +16,24 @@ In today's world, it is easy to find any kind of data from internet resources.Th
 ## Inspiration
 Last november, we had tried to extend the IAZI models on Indian data, particularly offeredPrice.IN. And among all the issues we faced, the most tedius and time consuming was the data collection part. 
 
-We had to search manually to each object/appartment available online and then enter the values manually to the data tables. This tiring task made us to think of better/smarter alternatves by which we could extract data from the available online platforms and we also wanted to try it out in R.
+We had to manually search each object/appartment available online and then enter the values to the data tables. This tiring task made us to think of better/smarter alternatves by which we could extract data from the available online platforms and we also wanted to try it out in R.
 
 ## Pre requisites
-* `rvest` package - Extracts information directly from webpages.
-* `Rcrawler` package - Crawls and extracts information from web pages.
+* *`rvest`* package - Extracts information directly from webpages.
+* *`Rcrawler`* package - Crawls and extracts information from web pages.
 * SelectorGadeget - Extracts CSS (Cascading Style Sheets) patterns from the  webpages. We've used the chrome extension of selectorGadget.
 
-## Website used for crawling
+## Website used
 `https://www.cardekho.com/` 
   - One of India's leading autoportal for cars.
   
-## RCrawler
+## *`rvest`* 
+
+### Basic usage
+
+### Limitations/Drawbacks
+  
+## *`RCrawler`*
 RCrawler is an R-based web crawler that can crawl and scrape web page content (articles, titles, and metadata) in an automated manner to produce a structured dataset.By providing only the website URL and the Xpath or CSS selector patterns, `Rcrawler{RCrawler}` can crawl the whole website (traverse all web pages), download webpages, and scrape/extract its contents in an automated manner to produce a structured dataset.
 
 <br> _Note : The process of a crawling operation is performed by several concurrent processes in parallel, so it's recommended to use 64bit version of R._
@@ -77,6 +83,8 @@ The output of Rcrawler() is as follows:
     - level: it represents the distance between the root document and all extracted links.
 
 * **`DATA`**: A list of lists in global environement holding scraped contents.
+
+## Further scope
 
 
 
